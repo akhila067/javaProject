@@ -20,3 +20,14 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+
+<button>Add</button>
+  <button>View</button>
+  <button>Search</button>
+  <button>Update</button><br><br><br><br>
+  Flight Id:<input type="text" id1="fid" requried><br><br>
+  Flight Model:<input type="text" id="fmdl" requried><br><br>
+  Carrier Name:<input type="text" id="cn" requried><br><br>
+  Seat Capacity:<input type="text" id="sc" requried><br><br>
+  <button routerLinkActive="active" routerLink="search">Search</button>
+  <button>Reset</button><br><br><br><br>
