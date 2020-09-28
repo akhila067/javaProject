@@ -1,0 +1,35 @@
+app component.ts
+
+<header>Flight reservation system <input type="submit" value="logout" style="background-color:rgb(202, 39, 28);color:white;"/></header> 
+<div class="container">
+  <nav class="navbar navbar-default">
+    <ul class="nav navbar-nav">
+        <button routerLinkActive="active" routerLink="add">Add</button>
+        <button routerLinkActive="active" routerLink="search">Search</button>
+        <button routerLinkActive="active" routerLink="update">Update</button>
+        <button routerLinkActive="active" routerLink="view">View</button>
+    </ul>
+  </nav>
+  <router-outlet></router-outlet>
+</div>
+
+
+
+update:
+
+<input type="text" placeholder="Flight Id:xxxx" id="fid" requried><br><br>
+<input type="text" placeholder="Flight Model:xxxx" id="fmodel"  requried><br><br>
+<input type="text" placeholder="Carrier Name:xxxx" id="cname"  requried><br><br>
+<input type="text" placeholder="Seat Capacity::xxxx"id="sc" requried><br><br>
+  <button type="button" style="background-color:rgb(8, 105, 8);color:white;" routerLinkActive="active" routerLink="update">Update</button>
+  <button type="button" style="background-color:rgb(202, 39, 28);color:white;">Reset</button><br><br><br><br>
+
+view:
+
+<input type="text" placeholder="Flight Id:xxxx" id="fid" requried><br><br>
+<input type="text" placeholder="Flight Model:xxxx" id="fmodel"  requried><br><br>
+<input type="text" placeholder="Carrier Name:xxxx" id="cname"  requried><br><br>
+<input type="text" placeholder="Seat Capacity::xxxx"id="sc" requried><br><br>
+<button  type="button" style="background-color:rgb(8, 105, 8);color:white;" routerLinkActive="active" routerLink="view">View</button>
+<button style="background-color:rgb(202, 39, 28);color:white;">Reset</button><br><br><br><br>
+
