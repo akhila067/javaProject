@@ -1,0 +1,22 @@
+app-routing.module.ts
+
+import { NgModule } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
+import { AddComponent } from './add/add.component';
+import { SearchComponent } from './search/search.component';
+import { UpdateComponent } from './update/update.component';
+import { ViewComponent } from './view/view.component';
+
+const routes: Routes = [
+  {path:'add',component:AddComponent},
+  {path:'search',component:SearchComponent},
+  {path:'update',component:UpdateComponent},
+  {path:'view',component:ViewComponent},
+  {path:'', redirectTo: '/add',pathMatch:'full'}
+];
+
+@NgModule({
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
+})
+export class AppRoutingModule { }
